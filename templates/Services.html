@@ -1,0 +1,157 @@
+
+{% extends 'base.html' %}
+{% block title %}Services{% endblock title %}
+{% block head %}<head>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+    <style>
+    body {"background-image: url(/static/bg.jfif); background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity:1;"}
+    </style>
+    
+</head>
+
+{% endblock head %}
+
+
+{% block body %} 
+<body >
+<div class="container-fluid" style="margin-left: auto; margin-right: auto; width: 80%;background-color: #c9c9c7;opacity:1;margin-top:40px;border-radius:10px;padding:40px;padding-top:20px">
+    <form id="form">
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationServer01"><Strong>ID:01</strong></label>
+            
+          </div>
+          
+        </div>
+
+        <div class="form-row">
+            
+            <div class="col-md-4 mb-3">
+                <label for="validationServer02">Name</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Full Name"  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationServer01">Contact</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Mobile No."  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationServerUsername">Email</label>
+                <div class="input-group">
+                  
+                  <input type="email" class="form-control is-invalid" id="validationServerUsername" placeholder="Email" aria-describedby="inputGroupPrepend3" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+          </div>
+        
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationServer03">Address</label>
+            <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Full Address" required>
+            <div class="invalid-feedback">
+              Please provide a valid Address.
+            </div>
+          </div>
+          
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">Membership:</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    1 Month
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    3 Months
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                  <label class="form-check-label" for="gridRadios3">
+                    6 Months
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                    <label class="form-check-label" for="gridRadios3">
+                        12 Months
+                    </label>
+                  </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+          <label for="validationServer01">Amount Paid:</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Rs</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Amount in Rupees">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div>
+        </div>
+    </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationServer01">Start-Date</label>
+              <input type="date" class="form-control is-valid" id="validationServer01"   required>
+  
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationServer02">End-Date</label>
+              <input type="date" class="form-control is-valid" id="validationServer02"  required>
+
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServer02">Hold Days</label>
+                <input type="Number" class="form-control is-valid" id="validationServer02" placeholder="Hold Days" value="Otto" required>
+
+              </div>
+          </div>  
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">Status:</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label" style="color:green" for="gridRadios1">
+                    Active
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+                  <label class="form-check-label" style="color:red" for="gridRadios2">
+                    Expired
+                  </label>
+                </div>
+
+              </div>
+            </div>
+          </fieldset>
+        
+        <button class="btn btn-success" style="margin:auto;display:block;" type="submit">Submit Details</button>
+      </form>
+
+</div> 
+</body>   
+{% endblock body %}
