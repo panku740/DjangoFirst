@@ -21,6 +21,7 @@ def about(request):
         "var2":"sent var2" 
     }
     return render(request,'about.html',context)  
+    
 
 def heval(request):
     return render(request,'heval.html')
